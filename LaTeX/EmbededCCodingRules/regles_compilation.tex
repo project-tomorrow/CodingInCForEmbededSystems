@@ -1,7 +1,7 @@
 \section{Compilation}
 
 \begin{center}
-\begin{tabular}{|c p{12.5cm}|}
+\begin{tabular}{|c p{12.3cm}|}
 \hline
 \rowcolor{red!10}\textbf{Règle 1.1} & Tous les fichiers sources doivent compiler sans \textit{warning}. \\ \hline
  & Un \textit{warning} témoigne d'un comportement risqué, non complètement défini ou sous optimal du code compilé. Il se peut que cela ne pose aucun souci à l'instant où le code est écrit, pour autant, cela ne veut pas dire qu'un comportement à risque ne sera pas déclenché par du code futur faisant appel à la fonction concernée.\\ \hline
@@ -12,7 +12,7 @@
 \medskip
 
 \begin{center}
-\begin{tabular}{|c p{12.5cm}|}
+\begin{tabular}{|c p{12.3cm}|}
 \hline
 \rowcolor{red!10}\textbf{Règle 1.2} & Le code est écrit et doit être compilé selon la norme \textit{C11}. \\ \hline
  & La norme \textit{C11} est à présent relativement ancienne, connue de la majorité des compilateurs et robuste pour que l'on puisse se permettre d'en faire la norme standard dans laquelle le code doit être compilé. Se limiter à des normes plus anciennes par habitude peut être source de contraintes inutiles.\\ \hline
@@ -23,7 +23,7 @@
 \medskip
 
 \begin{center}
-\begin{tabular}{|c p{12.5cm}|}
+\begin{tabular}{|c p{12.3cm}|}
 \hline
 \rowcolor{red!10}\textbf{Règle 1.3} & Il faut périodiquement lancer la \textit{toolchain} cible pour s'assurer de la compatibilité avec l'environnement cible. \\ \hline
  &  Si le code est développé sur hôte/PC avec \textit{gcc} par exemple, il est nécessaire de périodiquement lancer la \textit{toolchain} cible, avec les adaptations nécessaires éventuelles, pour s'assurer de la compatibilité du code développé avec l'environnement cible auquel le binaire généré est destiné. \\ \hline
@@ -34,7 +34,7 @@
 \medskip
 
 \begin{center}
-\begin{tabular}{|c p{12.5cm}|}
+\begin{tabular}{|c p{12.3cm}|}
 \hline
 \rowcolor{red!10}\textbf{Règle 1.4} & L'utilisation de balises préprocesseurs {\fontfamily{AnonymousPro}\selectfont\color{orange}{\#{}pragma}} changeant les options de compilation devra être systématiquement documentée et justifiée. \\ \hline
  & L'utilisation de balises préprocesseur {\fontfamily{AnonymousPro}\selectfont\color{orange}{\#{}pragma}} permet de changer les options de compilation au sein d'un fichier. Cela peut potentiellement rompre l'homogénéité des règles de compilation appliquées au projet et peut changer les propriété de la section de code compilé (taille du code compilé plus grande car moins optimisé, temps d'exécution différent, etc…). \\ \hline
