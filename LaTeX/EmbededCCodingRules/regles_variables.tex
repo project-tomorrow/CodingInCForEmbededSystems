@@ -1,10 +1,9 @@
 \section{Variables}
 
 \begin{center}
-\begin{tabular}{|c l|}
+\begin{tabular}{|c p{12.3cm}|}
 \hline
-\rowcolor{red!10}\textbf{Règle 6.1} & On utilisera systématiquement les types de variables permettant d'identifier \\
-\rowcolor{red!10} & leur taille et le fait qu'elles soient signées ou non. \\ \hline
+\rowcolor{red!10}\textbf{Règle 6.1} & On utilisera systématiquement les types de variables permettant d'identifier leur taille et le fait qu'elles soient signées ou non. \\ \hline
  & Ces types de variables sont définis par le compilateur comme étant : \\
  & uint8\_ t, uint16\_ t, uint32\_ t pour les types non signés \\
  & int8\_ t, int16\_ t, int32\_ t pour les type signés \\ \hline
@@ -15,12 +14,10 @@
 \medskip
 
 \begin{center}
-\begin{tabular}{|c l|}
+\begin{tabular}{|c p{12.3cm}|}
 \hline
-\rowcolor{red!10}\textbf{Règle 6.2} & Toutes les variables, tableaux, structures et paramètres de sortie doivent êtres\\
-\rowcolor{red!10} & initialisées avant utilisation. \\ \hline
- & Si l’on appelle la valeur d’une variable alors que celle-ci n’a jamais été \\
- & affectée, cela peut mener à un comportement indéfini du programme.\\ \hline
+\rowcolor{red!10}\textbf{Règle 6.2} & Toutes les variables, tableaux, structures et paramètres de sortie doivent êtres initialisées avant utilisation. \\ \hline
+ & Si l’on appelle la valeur d’une variable alors que celle-ci n’a jamais été affectée, cela peut mener à un comportement indéfini du programme.\\ \hline
 \hline
 \end{tabular}
 \end{center}
@@ -28,14 +25,10 @@
 \medskip
 
 \begin{center}
-\begin{tabular}{|c l|}
+\begin{tabular}{|c p{12.3cm}|}
 \hline
-\rowcolor{red!10}\textbf{Règle 6.3} & Lors de l'initialisation par une valeur numérique d'une variable de type long\\
-\rowcolor{red!10} & le suffixe L doit être ajouté. \\ \hline
- & Dans la mesure où il n’est pas nécessaire de donner le format hexadécimal exact \\
- & d’une variable de type long lors de son initialisation ou que celle-ci peut être\\
- & faite avec une valeur décimale, l’utilisation du suffixe L permet de s’assurer \\
- & que la variable est correctement initialisée.\\ \hline
+\rowcolor{red!10}\textbf{Règle 6.3} & Lors de l'initialisation par une valeur numérique d'une variable de type long le suffixe L doit être ajouté. \\ \hline
+ & Dans la mesure où il n’est pas nécessaire de donner le format hexadécimal exact d’une variable de type long lors de son initialisation ou que celle-ci peut être faite avec une valeur décimale, l’utilisation du suffixe L permet de s’assurer que la variable est correctement initialisée.\\ \hline
 \hline
 \end{tabular}
 \end{center}
@@ -43,13 +36,10 @@
 \medskip
 
 \begin{center}
-\begin{tabular}{|c l|}
+\begin{tabular}{|c p{12.3cm}|}
 \hline
-\rowcolor{red!10}\textbf{Règle 6.4} & Lors de l'initialisation par une valeur numérique d'une variable de type non \\
-\rowcolor{red!10} & signé le suffixe U doit être ajouté.\\ \hline
- & Dans le cadre de l’initialisation d’une variable d’un type non signé en \\
- & hexadécimal, il est préférable de faire appel au suffixe U pour clarifier la \\
- & valeur à laquelle on fait appel.\\ \hline
+\rowcolor{red!10}\textbf{Règle 6.4} & Lors de l'initialisation par une valeur numérique d'une variable de type non signé le suffixe U doit être ajouté.\\ \hline
+ & Dans le cadre de l’initialisation d’une variable d’un type non signé en hexadécimal, il est préférable de faire appel au suffixe U pour clarifier la valeur à laquelle on fait appel.\\ \hline
 \hline
 \end{tabular}
 \end{center}

@@ -1,13 +1,10 @@
 \section{Mots clef du \textit{Langage C}}
 
 \begin{center}
-\begin{tabular}{|c l|}
+\begin{tabular}{|c p{12.3cm}|}
 \hline
 \rowcolor{red!10}\textbf{Règle 5.1} & Les Digraphes et Trigraphes sont interdits. \\ \hline
- & Ils peuvent être remplacé par des symboles standards et ne font que rendre le \\
- & code moins clair et cassent potentiellement la compilation lorsque ceux-ci sont \\
- & utilisés par un programmeur qui ne les maitrise pas. De plus, ils ne sont pas \\
- & supportés par certains compilateurs. \\ \hline
+ & Ils peuvent être remplacé par des symboles standards et ne font que rendre le code moins clair et cassent potentiellement la compilation lorsque ceux-ci sont utilisés par un programmeur qui ne les maitrise pas. De plus, ils ne sont pas supportés par certains compilateurs. \\ \hline
 \hline
 \end{tabular}
 \end{center}
@@ -26,11 +23,10 @@ Trigraphes sont les symboles suivants :
 \medskip
 
 \begin{center}
-\begin{tabular}{|c l|}
+\begin{tabular}{|c p{12.3cm}|}
 \hline
 \rowcolor{red!10}\textbf{Règle 5.2} & Les opérations ternaires (\textit{inline if} en anglais) sont interdites. \\ \hline
- & Les affectations de valeur ternaires rendent le code inutilement complexe dans \\
- & sa lecture.\\ \hline
+ & Les affectations de valeur ternaires rendent le code inutilement complexe dans sa lecture.\\ \hline
 \hline
 \end{tabular}
 \end{center}
@@ -46,12 +42,10 @@ Trigraphes sont les symboles suivants :
 \medskip
 
 \begin{center}
-\begin{tabular}{|c l|}
+\begin{tabular}{|c p{12.3cm}|}
 \hline
 \rowcolor{red!10}\textbf{Règle 5.3} & Les fonctions récursives sont interdites. \\ \hline
- & Les fonctions récursives consomment potentiellement beaucoup de ressources en \\
- & RAM et dans un contexte de développement embarqué, cela peut mener à un \\
- & dépassement mémoire.\\ \hline
+ & Les fonctions récursives consomment potentiellement beaucoup de ressources en RAM et dans un contexte de développement embarqué, cela peut mener à un dépassement mémoire.\\ \hline
 \hline
 \end{tabular}
 \end{center}
@@ -59,12 +53,10 @@ Trigraphes sont les symboles suivants :
 \medskip
 
 \begin{center}
-\begin{tabular}{|c l|}
+\begin{tabular}{|c p{12.3cm}|}
 \hline
 \rowcolor{red!10}\textbf{Règle 5.4} & Le mot clef {\fontfamily{AnonymousPro}\selectfont\bfseries\color{red}{goto}} est interdit. \\ \hline
- & Le mot clef {\fontfamily{AnonymousPro}\selectfont\bfseries\color{red}{goto}} peut potentiellement induire un dysfonctionnement du programme \\
- & en sautant d'une section de code à l'autre dans laquelle certaines variables ou \\
- & pointeurs n'ont plus de valeur cohérente. \\ \hline
+ & Le mot clef {\fontfamily{AnonymousPro}\selectfont\bfseries\color{red}{goto}} peut potentiellement induire un dysfonctionnement du programme en sautant d'une section de code à l'autre dans laquelle certaines variables ou pointeurs n'ont plus de valeur cohérente. \\ \hline
 \hline
 \end{tabular}
 \end{center}
@@ -79,11 +71,10 @@ Si l'appel à une instruction {\fontfamily{AnonymousPro}\selectfont\bfseries\col
 \medskip
 
 \begin{center}
-\begin{tabular}{|c l|}
+\begin{tabular}{|c p{12.3cm}|}
 \hline
 \rowcolor{red!10}\textbf{Règle 5.5} & Les fonctions ou objets ne doivent pas être définis plus d'une fois \\ \hline
- & Redéfinir une fonction ou un objet amène un fort risque de télescopage à la \\
- & compilation. \\ \hline
+ & Redéfinir une fonction ou un objet amène un fort risque de télescopage à la compilation. \\ \hline
 \hline
 \end{tabular}
 \end{center}
@@ -91,14 +82,10 @@ Si l'appel à une instruction {\fontfamily{AnonymousPro}\selectfont\bfseries\col
 \medskip
 
 \begin{center}
-\begin{tabular}{|c l|}
+\begin{tabular}{|c p{12.3cm}|}
 \hline
-\rowcolor{red!10}\textbf{Règle 5.6} & Toute occurrence d'une fonction pouvant avoir un comportement indéfini doit être \\
-\rowcolor{red!10} & encadrée afin d'être contrôlée. \\ \hline
- & Tester les paramètres pour s'assurer qu'ils sont consistant avant l'appel à une \\
- & fonction pouvant avoir un comportement indéfini permet de fortement restreindre \\
- & le risque de voir celui-ci se produire et nous permet de nous placer dans une \\
- & optique de code robuste. \\ \hline
+\rowcolor{red!10}\textbf{Règle 5.6} & Toute occurrence d'une fonction pouvant avoir un comportement indéfini doit être encadrée afin d'être contrôlée. \\ \hline
+ & Tester les paramètres pour s'assurer qu'ils sont consistant avant l'appel à une fonction pouvant avoir un comportement indéfini permet de fortement restreindre le risque de voir celui-ci se produire et nous permet de nous placer dans une optique de code robuste. \\ \hline
 \hline
 \end{tabular}
 \end{center}
@@ -106,7 +93,7 @@ Si l'appel à une instruction {\fontfamily{AnonymousPro}\selectfont\bfseries\col
 \medskip
 
 \begin{center}
-\begin{tabular}{|c l|}
+\begin{tabular}{|c p{12.3cm}|}
 \hline
 \rowcolor{red!10}\textbf{Règle 5.7} & Il ne doit pas y avoir de conversion implicite. \\ \hline
  & Les conversions implicites provoquent des \textit{warnings}.\\ \hline
@@ -117,12 +104,10 @@ Si l'appel à une instruction {\fontfamily{AnonymousPro}\selectfont\bfseries\col
 \medskip
 
 \begin{center}
-\begin{tabular}{|c l|}
+\begin{tabular}{|c p{12.3cm}|}
 \hline
 \rowcolor{red!10}\textbf{Règle 5.8} & Il ne doit pas y avoir d'appel/définition de fonction implicite. \\ \hline
- & Les appels/définitions de fonctions implicites signifient qu'un module du \\
- & programme n'est pas visible depuis le module courant ou qu'une fonction n'est pas \\
- & définie correctement. Cela provoque l'apparition de \textit{warnings} \\ \hline
+ & Les appels/définitions de fonctions implicites signifient qu'un module du programme n'est pas visible depuis le module courant ou qu'une fonction n'est pas définie correctement. Cela provoque l'apparition de \textit{warnings} \\ \hline
 \hline
 \end{tabular}
 \end{center}
@@ -130,12 +115,10 @@ Si l'appel à une instruction {\fontfamily{AnonymousPro}\selectfont\bfseries\col
 \medskip
 
 \begin{center}
-\begin{tabular}{|c l|}
+\begin{tabular}{|c p{12.3cm}|}
 \hline
 \rowcolor{red!10}\textbf{Règle 5.9} & Les allocations dynamiques de mémoire sont interdite. \\ \hline
- & Les allocations dynamiques de mémoire sont des procédures risquées dans un cadre \\
- & embarqués et peuvent être éviter en dimensionnant correctement la taille des \\ 
- & piles allouées à chaque tache lors de la conception.\\ \hline
+ & Les allocations dynamiques de mémoire sont des procédures risquées dans un cadre embarqués et peuvent être éviter en dimensionnant correctement la taille des piles allouées à chaque tache lors de la conception.\\ \hline
 \hline
 \end{tabular}
 \end{center}
@@ -143,12 +126,10 @@ Si l'appel à une instruction {\fontfamily{AnonymousPro}\selectfont\bfseries\col
 \medskip
 
 \begin{center}
-\begin{tabular}{|c l|}
+\begin{tabular}{|c p{12.3cm}|}
 \hline
 \rowcolor{red!10}\textbf{Règle 5.10} & L'utilisation de fonction {\fontfamily{AnonymousPro}\selectfont\bfseries\color{red}{inline}} est interdite. \\ \hline
- & L'utilisation de fonctions {\fontfamily{AnonymousPro}\selectfont\bfseries\color{red}{inline}} duplique le code lors de la compilation et en \\
- & augmente la taille finale dans un contexte où il est nécessaire de faire des \\
- & économies de mémoire. \\ \hline
+ & L'utilisation de fonctions {\fontfamily{AnonymousPro}\selectfont\bfseries\color{red}{inline}} duplique le code lors de la compilation et en augmente la taille finale dans un contexte où il est nécessaire de faire des économies de mémoire. \\ \hline
 \hline
 \end{tabular}
 \end{center}

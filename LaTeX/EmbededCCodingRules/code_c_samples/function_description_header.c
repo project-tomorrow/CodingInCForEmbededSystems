@@ -1,18 +1,17 @@
 /**
   * @brief  A short description of function behavior and usage
-  * @param  [out] my_parameter0  First parameter of the function
-  *                              Value of this parameter is an output
-  *                              of the function. Most likely to be
-  *                              a pointer to a value.
-  * @param  [in] my_parameter1   Function second parameter.
-  *                              Value of this parameter is an input 
-  *                              of the function.
-  * @return my_returned_value : some details about possible values 
-  *                             of my_returned_value
+  * @param  [in] bar   First function parameter.
+  *                    Value of this parameter is an input 
+  *                    of the function.
+  * @param  [out] baz  Second parameter of the function
+  *                    Value of this parameter is an output
+  *                    of the function. Most likely to be
+  *                    a pointer to a value.
+  * @return returned_value : some details about possible values 
+  *                          of returned_value
   */
-static uint8_t my_example_function( uint8_t* my_parameter0, 
-                                    uint8_t my_parameter1 )
+static uint8_t foo( uint8_t bar, uint8_t* baz )
 {
-	// ... my_example_function code ... 
-	return my_returned_value ;
+	// ... foo function code ... 
+	return returned_value ;
 }
