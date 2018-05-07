@@ -46,13 +46,13 @@
   frame=single,	                   % adds a frame around the code
   frameround = TTTT,               % rounds the frame corners
   keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
-  keywordstyle=\bfseries\color{red},       % keyword style
+  keywordstyle=\color{orange},       % keyword style
   language=C,                      % the language of the code
   morekeywords={*,...},            % if you want to add more keywords to the set
-  emph={\# ,include,define,ifdef,endif,ifndef,pragma},    % add a empahsis on other keywords
-  emphstyle=\color{orange},        % color on emphasised words
+  emph={if,else,do,while,for,break,continue,sizeof,return,static,extern},    % add a empahsis on other keywords
+  emphstyle=\bfseries\color{red},        % color on emphasised words
   emph={[2]typedef,struct,enum,unsigned,const,volatile
-  ,void,char,int,long,float,uint8_t,uint16_t,uint32_t},    % add a empahsis on other keywords
+  ,void,char,int,long,float,uint8_t,uint16_t,uint32_t,int8_t,int16_t,int32_t},    % add a empahsis on other keywords
   emphstyle={[2]\bfseries\color{blue}},       % color on emphasised words
   emph={[3]@file,@brief,@param,@return,@warning,@note,
   @author,@verbatim,@endverbatim},    % add a empahsis on more keywords

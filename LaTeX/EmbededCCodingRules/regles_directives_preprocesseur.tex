@@ -55,8 +55,8 @@ Si la désactivation de mots clef du compilateur est nécessaire, on pourra util
 \begin{center}
 \begin{tabular}{|c p{12.3cm}|}
 \hline
-\rowcolor{red!10}\textbf{Règle 4.4} & Toute directive {\fontfamily{AnonymousPro}\selectfont\color{orange}{\# include}\color{mymauve}{"unFichier.h"}}/{\fontfamily{AnonymousPro}\selectfont\color{mymauve}{<unFichier.h>}} ne doit être précédées que par des directives préprocesseur ou des commentaires. On placera systématiquement les directives {\fontfamily{AnonymousPro}\selectfont\color{orange}{\# include}} en tête de fichier. \\ \hline
- & Placer les directives {\fontfamily{AnonymousPro}\selectfont\color{orange}{\# include}} en début de fichier permet de s'assurer rapidement que les références nécessaires au fonctionnement du module sont présentes. Si elles se situent de façon dispersée au travers du fichier, cela peut entrainer un comportement indéfini si l'inclusion de certains modules font appel à des références incluses seulement par d'autres plus bas dans le fichier \\ \hline
+\rowcolor{red!10}\textbf{Règle 4.4} & Toute directive {\fontfamily{AnonymousPro}\selectfont\color{orange}{\#{}include}\color{mymauve}{"unFichier.h"}}/{\fontfamily{AnonymousPro}\selectfont\color{mymauve}{<unFichier.h>}} ne doit être précédées que par des directives préprocesseur ou des commentaires. On placera systématiquement les directives {\fontfamily{AnonymousPro}\selectfont\color{orange}{\#{}include}} en tête de fichier. \\ \hline
+ & Placer les directives {\fontfamily{AnonymousPro}\selectfont\color{orange}{\#{}include}} en début de fichier permet de s'assurer rapidement que les références nécessaires au fonctionnement du module sont présentes. Si elles se situent de façon dispersée au travers du fichier, cela peut entrainer un comportement indéfini si l'inclusion de certains modules font appel à des références incluses seulement par d'autres plus bas dans le fichier \\ \hline
 \hline
 \end{tabular}
 \end{center}
