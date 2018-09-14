@@ -6,7 +6,7 @@ void albanique( uint8_t patres )
 	 * altae moenia Romae.
 	 * Musa, mihi causas memora, quo numine laeso,
 	 */
-	if(patres!= 0 )
+	if( patres!= 0 )
 	{
 		return quidue;
 	}
