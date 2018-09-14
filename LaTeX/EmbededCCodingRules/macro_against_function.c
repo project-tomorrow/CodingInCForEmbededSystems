@@ -1,4 +1,4 @@
-// This might be avoided
+// This has to be avoided
 #define IS_RESP_OK(resp, len, parser)                       \
     {                                                       \
         parser = TEST_OK;                                   \
