@@ -1,0 +1,62 @@
+Ce document adopte les conventions de présentation de suivantes. \medskip
+
+\section{Présentation du texte}
+
+\begin{itemize}
+\item Le texte général adopte comme unique langue la \textbf{langue française} à l’exception que quelques mots issus du jargon technique qui devront être définis dans le glossaire (par exemple le terme \textit{warning}).
+\item Le texte général est écrit en police \xout{Times New Roman}\footnote{La police de ce document est encore indéterminée} et est justifié.
+\item Un mot clef défini dans le glossaire \textit{apparait en italique}.
+\item La mise en valeur d’un terme est faite par sa \textbf{mise en gras} dans le corps de texte
+\item Il n’y a pas de cumul de mise en forme. Par exemple : \textbf{\textit{ceci a été banni}}.
+\item Il n’y a pas de texte \textsl{souligné}.
+\end{itemize}
+\bigskip
+
+\section{Présentation d'extraits de code}
+
+\begin{itemize}
+\item Le code adopte comme unique langue la langue \textbf{anglaise}.
+\item Une citation de code dans un bloc de texte apparait en police \xout{Consolas}\footnote{La police des extraits de code de ce document est encore indéterminée} avec les options de mise en forme définies ci-dessous.
+\item Un bloc de code apparait comme il suit :
+\end{itemize}
+
+% \begin{verbatim}
+% En police Consolas dans un encadré séparé, sur fond légèrement grisé, avec une ligne
+% vierge en fin de bloc et avec la mise en forme suivante :
+% - Les types de variables et leurs mots clef associés (char, void, const,
+% enum, typedef, etc…) sont en bleu et gras.
+% - Les mots clef du langage C (if, while, sizeof, break, etc…) sont en rouge
+% et gras
+% - Les chaines de caractères et les caractères ("hello" et ‘\n’ par
+% exemple) sont en violet
+% - Les commentaires (/*…*/ ou //…) sont en vert
+% - Les opérateurs (=, *, &, |, etc…) sont en gris
+% - Les nombres (0x41, 1, …) sont en cyan
+% - Les directives préprocesseur (#define, #ifdef, etc…) sont en orange
+%\end{verbatim}
+\lstinputlisting{code_bloc_layout.c}
+\bigskip
+
+\section{Présentation des règles}
+
+\begin{itemize}
+\item Les règles sont réparties en sous-groupes de thèmes communs (syntaxe, variable, etc…).
+\item Chaque règle est numérotée \textbf{Règle X.Y} où \textbf{X} est le numéro du sous-groupe auquel appartient la règle et \textbf{Y} le numéro attribué à la règle dans son sous-groupe.
+\item Une règle adopte la présentation type suivante\footnote{Texte Latin extrait de l’\textit{Énéide}} :
+\end{itemize}
+
+\begin{verbatim}
+Règle X.Y : Énoncé de la Règle ; Arma uirumque cano, Troiae qui primus ab oris Italiam, fato profugus,
+Lauiniaque uenit litora, multum ille et terris iactatus et alto
+Texte explicatif ; ui superum saeuae memorem Iunonis ob iram ; multa quoque et bello passus,
+dum conderet urbem, inferretque deos Latio, genus unde Latinum1,
+\end{verbatim}
+\begin{large}
+\textbf{Exemple :}
+\end{large}
+\medskip
+\lstinputlisting{eneide.c}
+
+\bigskip
+
+\pagebreak
