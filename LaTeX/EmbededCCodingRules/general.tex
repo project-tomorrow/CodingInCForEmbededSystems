@@ -8,6 +8,7 @@
 \usepackage{fancyhdr}
 \usepackage{graphicx}
 \usepackage{color}
+\usepackage[table]{xcolor}
 %\usepackage{tikz}
 \usepackage{bbding}
 \usepackage{titlesec}
@@ -21,6 +22,9 @@
 
 %\fontfamily{phv}\selectfont %change la police courante pour "Helvetica"
 
+% ---------------------------------------------
+% - Definition du style des inclusion de code -
+% ---------------------------------------------
 \definecolor{mygreen}{rgb}{0,0.6,0}
 \definecolor{mygray}{rgb}{0.4,0.4,0.4}
 \definecolor{mymauve}{rgb}{0.58,0,0.82}
@@ -32,7 +36,7 @@
   basicstyle=\footnotesize,        % the size of the fonts that are used for the code
   breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
   breaklines=true,                 % sets automatic line breaking
-  captionpos=b,                    % sets the caption-position to bottom
+  captionpos=false,                    % sets the caption-position to bottom
   commentstyle=\color{mygreen},    % comment style
   deletekeywords={...},            % if you want to delete keywords from the given language
   escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
@@ -45,8 +49,8 @@
   morekeywords={*,...},            % if you want to add more keywords to the set
   emph={define,ifdef,endif},    % add a empahsis on other keywords
   emphstyle=\color{orange},        % color on emphasised words
-  emph={[2]typedef,enum,unsigned,const,volatile,void,
-  char,int,long,float,uint8_t,uint16_t,uint32_t},    % add a empahsis on other keywords
+  emph={[2]typedef,struct,enum,unsigned,const,volatile
+  ,void,char,int,long,float,uint8_t,uint16_t,uint32_t},    % add a empahsis on other keywords
   emphstyle={[2]\bfseries\color{blue}},       % color on emphasised words
   numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
   numbersep=10pt,                   % how far the line-numbers are from the code
@@ -62,6 +66,9 @@
   title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
 }
 
+% --------------------------------------------
+% -------- Définition des en-tête ------------
+% --------------------------------------------
 \pagestyle{fancy}
 \fancyhead{} % clear all header fields
 \fancyhead[L]{\slshape \leftmark}
@@ -72,6 +79,9 @@
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\footrulewidth}{0.4pt}
 
+% --------------------------------------------
+% -------- Définition de la page de garde ----
+% --------------------------------------------
 \titleformat{\part}[frame]
   {\normalfont}
   {\filright\footnotesize\enspace PARTIE \thepart\enspace}

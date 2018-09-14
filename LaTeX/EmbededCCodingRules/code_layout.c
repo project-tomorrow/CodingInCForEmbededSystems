@@ -6,10 +6,6 @@
     "hello"    '\n'
 // - Les commentaires :
     /* ... */ ou //...
-// - Les operateurs :
-    =    *    &    |
-// - Les nombres : 
-    0x41 ou    1
 // - Les directives preprocesseur :
     #define    #ifdef
 
