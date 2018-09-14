@@ -18,18 +18,16 @@
 \usepackage[normalem]{ulem}
 \usepackage[francais]{babel}  % Placez ici une liste de langues, la
                               % dernière étant la langue principale
-\usepackage{listings}
+\usepackage{listings}        % Supporte l'inclusion d'extraits de code avec leur mise en  forme
 
 %\pagestyle{headings}        % Pour mettre des entètes avec les titres
                             % des sections en haut de page
-
-%\fontfamily{phv}\selectfont %change la police courante pour "Helvetica"
 
 % ---------------------------------------------
 % - Definition du style des inclusion de code -
 % ---------------------------------------------
 \definecolor{mygreen}{rgb}{0,0.6,0}
-\definecolor{mygray}{rgb}{0.4,0.4,0.4}
+%\definecolor{mygray}{rgb}{0.4,0.4,0.4}
 \definecolor{mymauve}{rgb}{0.58,0,0.82}
 \definecolor{lightgray}{rgb}{0.98,0.98,0.98}
 \definecolor{orange}{rgb}{0.5,0.5,0}
@@ -57,7 +55,7 @@
   emphstyle={[2]\bfseries\color{blue}},       % color on emphasised words
   numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
   numbersep=10pt,                   % how far the line-numbers are from the code
-  numberstyle=\color{mygray}, % the style that is used for the line-numbers
+  %numberstyle=\color{mygray}, % the style that is used for the line-numbers
   rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
   showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
   showstringspaces=false,          % underline spaces within strings only
@@ -86,8 +84,8 @@
 % -------- Définition des format des titres de partie et de section ----
 % ----------------------------------------------------------------------
 \titleformat{\part}[frame]
-  {\normalfont}
-  {\filright\enspace PARTIE \thepart\enspace}
+  {\large\scshape}
+  {\filright\enspace Partie \thepart\enspace}
   {8pt}
   {\Large\scshape\filcenter}
 
@@ -104,12 +102,12 @@
 \begin{titlepage}
   % \fontfamily{phv}\selectfont
   \vspace*{\stretch{1}}
-  \begin{flushleft}\huge\bfseries
+  \begin{flushleft}\huge\bfseries\scshape
     Règles de Développement pour la Programmation en \textit{Langage C} dans le Cadre de Systèmes Embarqués
   \end{flushleft}
   \hrule
-  \begin{flushright}\LARGE
-    \textit{Embeded C Development - Coding Rules}
+  \begin{flushright}\LARGE\slshape
+    Embeded C Development - Coding Rules
   \end{flushright}
   \vspace*{\stretch{2}}
   \begin{center}
