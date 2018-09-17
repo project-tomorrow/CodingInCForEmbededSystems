@@ -1,0 +1,165 @@
+\documentclass[a4paper, titlepage]{article}
+
+\usepackage{libertine}
+\renewcommand*\familydefault{\sfdefault}  % Only if the base font of the document is to be sans serif
+\usepackage{AnonymousPro}
+\usepackage[T1]{fontenc}      % Police contenant les caractères français
+\usepackage[utf8]{inputenc}   % LaTeX, comprends les accents !
+\usepackage{geometry}         % Définir les marges
+\usepackage{amssymb}
+%NE PAS OUBLIER DE DECOMMENTER LES LIGNES SUIVANTES LORS DE L'INCLUSION DES IMAGES
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage[table]{xcolor}
+%\usepackage{tikz}
+\usepackage{bbding}
+\usepackage{titlesec}
+\usepackage[normalem]{ulem}
+\usepackage[french]{babel}  % Placez ici une liste de langues, la
+                              % dernière étant la langue principale
+\usepackage{listings}        % Supporte l'inclusion d'extraits de code avec leur mise en  forme
+
+%\pagestyle{headings}        % Pour mettre des entètes avec les titres
+                            % des sections en haut de page
+
+% ---------------------------------------------
+% - Definition du style des inclusion de code -
+% ---------------------------------------------
+\definecolor{mygreen}{rgb}{0,0.6,0}
+%\definecolor{mygray}{rgb}{0.4,0.4,0.4}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+\definecolor{lightgray}{rgb}{0.98,0.98,0.98}
+\definecolor{orange}{rgb}{0.5,0.5,0}
+%\definecolor{darkred}{rgb}{0.5,0.5,0}
+
+\lstset{ %
+  backgroundcolor=\color{lightgray},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
+  basicstyle=\fontfamily{AnonymousPro}\selectfont,            % the size of the fonts that are used for the code
+  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 % sets automatic line breaking
+  captionpos=false,                % sets the caption-position to bottom
+  commentstyle=\slshape\color{mygreen},    % comment style
+  deletekeywords={...},            % if you want to delete keywords from the given language
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  frame=single,	                   % adds a frame around the code
+  frameround = TTTT,               % rounds the frame corners
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{orange},       % keyword style
+  language=C,                      % the language of the code
+  morekeywords={*,...},            % if you want to add more keywords to the set
+  emph={if,else,do,while,for,break,continue,sizeof,return,static,extern},    % add a empahsis on other keywords
+  emphstyle=\bfseries\color{red},        % color on emphasised words
+  emph={[2]typedef,struct,enum,unsigned,const,volatile
+  ,void,char,int,long,float,uint8_t,uint16_t,uint32_t,int8_t,int16_t,int32_t},    % add a empahsis on other keywords
+  emphstyle={[2]\bfseries\color{blue}},       % color on emphasised words
+  emph={[3]@file,@brief,@param,@return,@warning,@note,
+  @author,@verbatim,@endverbatim},    % add a empahsis on more keywords
+  emphstyle={[3]\slshape\color{purple}},       % color on emphasised words
+  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=10pt,                   % how far the line-numbers are from the code
+  %numberstyle=\color{mygray}, % the style that is used for the line-numbers
+  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stepnumber=5,                    % the step between two line-numbers. If it's 1, each line will be numbered
+  firstnumber=1,                  % number at which the code block starts
+  stringstyle=\color{mymauve},     % string literal style
+  tabsize=4,	                   % sets default tabsize to 2 spaces
+  title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
+
+% --------------------------------------------
+% -------- Définition des en-tête ------------
+% --------------------------------------------
+\pagestyle{fancy}
+\fancyhead{} % clear all header fields
+\fancyhead[L]{\slshape \leftmark}
+\fancyhead[R]{\includegraphics[scale=0.15]{pictures/ProToLogo.png}}
+\fancyfoot{} % clear all footer fields
+\fancyfoot[C]{\thepage}
+\fancyfoot[L]{Association \textbf{ProTo}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+% ----------------------------------------------------------------------
+% -------- Définition des format des titres de partie et de section ----
+% ----------------------------------------------------------------------
+\titleformat{\part}[frame]
+  {\large\scshape}
+  {\filright\enspace Partie \thepart\enspace}
+  {8pt}
+  {\Large\scshape\filcenter}
+
+\titleformat{\section}[block]
+  {\Large\bfseries\filright}
+  {\fbox{\itshape\thesection}}
+  {0.5em}{}
+
+\begin{document}
+
+% --------------------------------------------
+% -------- Définition de la page de garde ----
+% --------------------------------------------
+\begin{titlepage}
+  % \fontfamily{phv}\selectfont
+  \vspace*{\stretch{1}}
+  \begin{flushleft}\huge\bfseries\scshape
+    Règles de Développement pour la Programmation en \textit{Langage C} dans le Cadre de Systèmes Embarqués
+  \end{flushleft}
+  \hrule
+  \begin{flushright}\LARGE\slshape
+    Redaction Rules for C Programming Language in the Context of Embeded Systems
+  \end{flushright}
+  \vspace*{\stretch{2}}
+  \begin{center}
+  	\Large\textsc{Texte Français}
+  \end{center}  
+  \vspace*{\stretch{1}}
+  \begin{center}
+    Vincent \textsc{Ricchi} - Association \textsc{\textbf{ProTo}}\linebreak
+    2017 / 2018
+  \end{center}
+\end{titlepage}
+
+% -------------------------------------------------------------------
+% -------- Inclusion des différents fichiesr contenants le texte ----
+% -------------------------------------------------------------------
+
+\part*{Avant-propos}
+\input{avant-propos}
+
+\tableofcontents
+
+\pagebreak
+
+\part{Introduction}
+\input{introduction}
+
+\part{Présentation globale du document}
+\input{presentation_document}
+
+\part{Règles détaillées}
+\input{regles_compilation}
+\input{regles_philosophie}
+\input{regles_organisation_des_fichiers_sources}
+\input{regles_directives_preprocesseur}
+\input{regles_mots_clef_langage_C}
+\input{regles_variables}
+\input{regles_style_du_code}
+
+\appendix
+
+\pagebreak
+
+\part*{Glossaire}
+\input{glossaire}
+
+\pagebreak
+
+\part*{Résumé des règles}
+\input{resume_regles}
+
+\end{document}
